@@ -42,7 +42,9 @@ nav ul li {
   list-style: none;
   padding: 0 12px;
 }
-
+.fa, .far, .fas {
+    font-size: 24px;
+}
 .search {
   width: 34vw;
   padding: 7px 17px;
