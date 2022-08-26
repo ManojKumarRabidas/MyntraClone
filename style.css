@@ -1,143 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  background: white;
-  height: 66px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-.rightBox {
+.flex {
   display: flex;
-  margin: 12px;
 }
-.left img {
-  width: 32px;
-  height: 23px;
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
-.container {
-  padding: 0 5vw;
-  background-color: rgb(241, 242, 255);
-}
-
-.containerHeader {
-  padding: 0 5vw;
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-nav {
-  font-size: 12px;
-  padding-top: 14px;
-}
-
-nav ul li {
-  list-style: none;
-  padding: 0 12px;
-}
-
-.search {
-  width: 34vw;
-  padding: 7px 17px;
-  border: 0.5px solid gray;
-  background: #f8f8ff;
-  border-radius: 5px;
-}
-.searche2 {
-  display: none;
-}
-
-.homeImg {
-  width: 88vw;
-  margin: 10px 5px;
-}
-.itemImg {
-  margin: 5px 5px;
-}
-footer {
-  background-color: black;
-  height: 10vh;
-  color: #e7e7fd;
+.item-center {
   align-items: center;
 }
 
-label #btn,
-label #cancel {
-  font-size: 20px;
-  float: left;
-  /* line-height: 80px; */
-  /* margin-left: 80px; */
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.semibold {
+  font-weight: bolder;
+}
+.ibig {
+  height: 20px;
+}
+
+.mx-2 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.my-2 {
+  margin: 12px 0;
+}
+.small {
+  width: 30vw;
+}
+.pointer {
   cursor: pointer;
-  display: none;
-}
-#check {
-  display: none;
-}
-
-@media (max-width: 980px) {
-  label #btn,
-  #cancel {
-    display: block;
-    margin-top: 8px;
-  }
-  #ckc {
-    position: fixed;
-    width: 70%;
-    height: 100vh;
-    background: rgb(54, 47, 47);
-    top: -2%;
-    left: -100%;
-    /* left: 0; */
-    text-align: center;
-    color: #e7e7fd;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.5s;
-  }
-
-  .var {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-    font-size: 17px;
-    line-height: 10px;
-  }
-  #check:checked ~ #ckc {
-    left: 0;
-  }
-
-  #check:checked ~ label #btn {
-    display: none;
-  }
-  
-  #check:checked ~ label #cancel {
-    display: block;
-  }
-
-  .icon {
-    padding-left: 5px;
-    margin-left: 15px;
-    margin-top: 7px;
-  }
-
-  .homeImg {
-    width: 100vw;
-    margin: 3px 0px;
-  }
-  .itemImg {
-    height: 60vw;
-  }
-  .sicon {
-    margin-left: 0px;
-  }
-  .search {
-    visibility: hidden;
-  }
 }
