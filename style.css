@@ -58,6 +58,9 @@ nav ul li {
   width: 88vw;
   margin: 10px 5px;
 }
+.small {
+  width: 30vw;
+}
 .itemImg {
   margin: 5px 5px;
 }
